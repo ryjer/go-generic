@@ -7,7 +7,7 @@ type Num interface {
 	Uint | Int | Float
 }
 
-// 复数泛型
+// 复数泛型 C
 // complex number
 type ComplexNumber interface {
 	RealNumber | Complex
@@ -16,7 +16,7 @@ type C interface {
 	R | Complex
 }
 
-// 实数泛型
+// 实数泛型 R
 // real number
 type RealNumber interface {
 	RationalNumber
@@ -25,7 +25,7 @@ type R interface {
 	Q
 }
 
-// 有理数泛型/可商数泛型
+// 有理数泛型/可商数泛型 Q
 // Rational Number
 type RationalNumber interface {
 	Integer | Float
@@ -34,7 +34,7 @@ type Q interface {
 	Z | Float
 }
 
-// 整数泛型
+// 整数泛型 Z
 // Integer
 type Integer interface {
 	Uint | Int
