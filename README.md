@@ -38,7 +38,7 @@ go get gitee.com/ryjer/go-generic
 go get github.com/ryjer/go-generic
 ```
 
-以上命令会下载最新版本的包，将其写入依赖文件 `go.mod` 中。同时锁定版本
+以上命令会下载最新版本的包，将其写入依赖文件 `go.mod` 中。同时锁定版本，如果你想更新包到最新版本或者指定版本的话，可以使用`-u`参数选项。具体可以参考下面的步骤3
 
 ### 2. 在 import 块中导入本包
 
@@ -84,11 +84,12 @@ func main() {
 
 ### 3. 更新包
 
-使用`go get -u`命令更新本包
+上面的过程会**锁定**你当时下载的包的版本，如果你想更新包的版本，可以使用`go get -u`命令
 
 ```bash
 go get -u gitee.com/ryjer/go-generic
 ```
+此命令也可以更新到指定版本，你可以查阅官方手册
 
 ## 参与贡献
 
