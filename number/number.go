@@ -1,11 +1,6 @@
+// 数字的泛型定义
+// 每种泛型定义都包括了符合其类型特征的子类
 package number
-
-// 为单元测试准备的一维可比较数定义，
-// ordered num define for unit test
-type Num interface {
-	// 测试用临时泛型，一维可比较数字类型
-	Uint | Int | Float
-}
 
 // 复数泛型 C
 // complex number
